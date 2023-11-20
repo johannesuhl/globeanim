@@ -5,7 +5,7 @@ Created on Sat Nov 11 17:25:33 2023
 @author: Johannes H. Uhl, European Commission Joint Research Centre, Ispra, Italy.
 """
 
-### GlobAnim - a Python script to animate global raster datasets on a rotating globe
+### GlobeAnim - a Python script to animate global raster datasets on a rotating globe
 ### Parameters: 
 ###   intif: a geotiff file of global coverage
 ###   datadir: folder for temp and output data
