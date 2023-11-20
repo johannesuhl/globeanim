@@ -26,7 +26,7 @@ from osgeo import gdal
 
 # 1st example: NASA's blue marble RGB image #########################################################################        
 # Data source: https://visibleearth.nasa.gov/search?q=geotiff
-intif = 'land_shallow_topo_8192_georef.tif'
+intif = './inputs/land_shallow_topo_8192_georef.tif'
 datadir='./outputs'
 output_gif=datadir+os.sep+os.path.split(intif)[-1].replace('.tif','.gif')
 frame_duration = 0.15 #seconds per frame
@@ -73,7 +73,7 @@ for filename in set(currfiles_rendered):
 #########################################################################   
 # 2nd example: Koeppen-Geiger climate zones (categorical raster dataset)
 # Data source: https://figshare.com/articles/dataset/Present_and_future_K_ppen-Geiger_climate_classification_maps_at_1-km_resolution/6396959/2    
-intif='Beck_KG_V1_present_0p5.tif'
+intif='./inputs/Beck_KG_V1_present_0p5.tif'
 datadir='./outputs'
 output_gif=datadir+os.sep+os.path.split(intif)[-1].replace('.tif','.gif')
 frame_duration = 0.15 #seconds per frame
@@ -140,7 +140,7 @@ for filename in set(currfiles_rendered):
 #########################################################################
 # 3rd example: Global Human Settlement Layer, gridded population data (continuous raster dataset)        
 # Source: https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2020_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.zip
-intif='GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.tif' 
+intif='./inputs/GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.tif' 
 datadir='./outputs'
 output_gif=datadir+os.sep+os.path.split(intif)[-1].replace('.tif','.gif')
 frame_duration = 0.15 #seconds per frame
