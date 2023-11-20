@@ -4,3 +4,4 @@ GlobeAnim is a Python tool that projects a GeoTIFF file onto a globe and rotates
 <img width="450" src=https://github.com/johannesuhl/cru_data_processing/blob/main/cru_tmp_animated_global2.gif">
 
 
+![alt text](https://github.com/johannesuhl/cru_data_processing/blob/main/cru_tmp_animated_global2.gif)?raw=true)
