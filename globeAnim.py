@@ -19,14 +19,14 @@ import imageio
 from osgeo import gdal
 
 # Examples: ###########################
-# Ex. 1) RGB image (NASA's blue marble image)
+# Ex. 1) RGB image (NASA's black marble image)
 # Ex. 2) Categorical raster dataset (Climate zones)
 # Ex. 3) Contiuous raster dataset (Gridded population data)
 #######################################
 
-# 1st example: NASA's blue marble RGB image #########################################################################        
+# 1st example: NASA's "earth at night" RGB image #########################################################################        
 # Data source: https://visibleearth.nasa.gov/search?q=geotiff
-intif = './inputs/land_shallow_topo_8192_georef.tif'
+intif = './inputs/BlackMarble_2016_01deg_geo.tif'
 datadir='./outputs'
 output_gif=datadir+os.sep+os.path.split(intif)[-1].replace('.tif','.gif')
 frame_duration = 0.15 #seconds per frame
@@ -140,7 +140,7 @@ for filename in set(currfiles_rendered):
 #########################################################################
 # 3rd example: Global Human Settlement Layer, gridded population data (continuous raster dataset)        
 # Source: https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2020_GLOBE_R2023A_4326_30ss/V1-0/GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.zip
-intif='./inputs/GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.tif' 
+intif='./inputs/GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.tif' #needs to be downloaded from source
 datadir='./outputs'
 output_gif=datadir+os.sep+os.path.split(intif)[-1].replace('.tif','.gif')
 frame_duration = 0.15 #seconds per frame
